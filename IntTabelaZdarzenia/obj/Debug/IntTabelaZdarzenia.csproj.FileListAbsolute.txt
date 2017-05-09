@@ -1,0 +1,6 @@
+c:\users\adam\documents\visual studio 2017\Projects\IntTabelaZdarzenia\IntTabelaZdarzenia\bin\Debug\IntTabelaZdarzenia.exe.config
+c:\users\adam\documents\visual studio 2017\Projects\IntTabelaZdarzenia\IntTabelaZdarzenia\bin\Debug\IntTabelaZdarzenia.exe
+c:\users\adam\documents\visual studio 2017\Projects\IntTabelaZdarzenia\IntTabelaZdarzenia\bin\Debug\IntTabelaZdarzenia.pdb
+c:\users\adam\documents\visual studio 2017\Projects\IntTabelaZdarzenia\IntTabelaZdarzenia\obj\Debug\IntTabelaZdarzenia.csprojResolveAssemblyReference.cache
+c:\users\adam\documents\visual studio 2017\Projects\IntTabelaZdarzenia\IntTabelaZdarzenia\obj\Debug\IntTabelaZdarzenia.exe
+c:\users\adam\documents\visual studio 2017\Projects\IntTabelaZdarzenia\IntTabelaZdarzenia\obj\Debug\IntTabelaZdarzenia.pdb
