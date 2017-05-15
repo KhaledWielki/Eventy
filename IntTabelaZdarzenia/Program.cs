@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public delegate void PrintSizeDelegate(object oSender, EventArgs oEventArgs);
+
 
     class Program
     {
-        public delegate void PrintSizeDelegate(int size);
-        public event PrintSizeDelegate PrintSizeEvent;
+
         static void Main(string[] args)
         {
             int menuChoice = 0;
@@ -22,7 +21,9 @@ namespace ConsoleApp1
             int positionToDisplay = 0;
             Tabela tabela = new Tabela();
             Program program = new Program();
-            
+
+            tabela.AddToTable += new Tabela.AddToTableDelegate(tabela.Add);
+            tabela.ResizeTable += new Tabela.ResizeTableDelegate(tabela.Resize);
 
             while (true)
             {
@@ -46,7 +47,7 @@ namespace ConsoleApp1
 
                 switch (menuChoice)
                 {
-                    
+
 
                     case 1:
                         System.Console.WriteLine("\nInteger: ");
@@ -57,11 +58,11 @@ namespace ConsoleApp1
 
                         if (positionToAdd > tabela.Length)
                         {
-                            tabela.Resize(positionToAdd);
-                            tabela[positionToAdd - 1] = numberToAdd;
+                            tabela.ResizeTable;
+                            tabela.Add(positionToAdd, numberToAdd);
                         }
                         else
-                            tabela[positionToAdd - 1] = numberToAdd;
+                            tabela.Add(positionToAdd, numberToAdd);
 
                         break;
 
@@ -88,16 +89,6 @@ namespace ConsoleApp1
                 }
 
             }
-        }
-
-
-
-        protected void PrintSize(int size)
-        {
-            if (PrintSizeEvent != null)
-            {
-                System.Console.WriteLine("Table size: " + size);
-            }  
         }
     }
 }
